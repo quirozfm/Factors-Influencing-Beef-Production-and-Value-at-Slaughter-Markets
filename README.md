@@ -97,7 +97,7 @@ AvgTemp: The coefficient is -0.326, with a p-value of 0.889, indicating no signi
 Beef_Value_SlaughterMarket.
 From here we will continue to remove those variables with the highest P-values. 
 
-###Regression – No precipitation, No Avg Temperature
+### Regression – No precipitation, No Avg Temperature
 Model Summary: The model summary indicates that the adjusted R-squared is 0.712, which means that approximately
 71.2% of the variability in the Beef_Value_SlaughterMarket can be explained by the model with the given predictor
 variables (BeefConsumption_US, Beef_Production_BillionPounds, Barley, Maize, Sorghum, and SoyaBeans). The
