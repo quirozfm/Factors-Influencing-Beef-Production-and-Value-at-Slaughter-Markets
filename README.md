@@ -282,7 +282,7 @@ variability in the Beef_Value_SlaughterMarket.
 ___________________________________________
 
 # Section IV: SPSS Stepwise Variable Removal
-[View Stepwise Var PDF](images/Stepwise%20Var.pdf)
+[View Stepwise PDF](images/Stepwise.pdf)
 In this stepwise regression model, SoyaBeans was entered in the first step, and BeefConsumption_US was entered in the
 second step, based on the specified criteria.
 
