@@ -32,7 +32,8 @@ the models accordingly.
 ___________________________________________
 # Section II: Regression Model with all 8 Variables
 
-# plots
+[View All Variables PDF](images/All%20Variables.pdf)
+
 
 #### Correlation Analysis:
 The correlation matrix provides the Pearson correlation coefficients for all pairs of variables. Some notable correlations
