@@ -67,7 +67,7 @@ indicates that these results should be interpreted with caution. To address this
 
 ___________________________________________
 # Section III: Manual Removal of Variables
-
+[View 1 Var PDF](images/1%20Var.pdf)
 ## Model Summary:
 
 The model summary indicates that the adjusted R-squared is 0.689, which means that approximately 68.9% of the variability in the Beef_Value_SlaughterMarket can be explained by the model with the given predictor variables (AvgTemp, BeefConsumption_US, Sorghum, Beef_Production_BillionPounds, Barley, Maize, and SoyaBeans). The model's standard error of the estimate is 6.83518, which reflects the average distance that the observed values fall from the regression line.
@@ -110,6 +110,8 @@ From here, we will continue to remove those variables with the highest p-values.
 
 ## Regression – No Precipitation, No Avg Temperature
 
+[View 2 Var PDF](images/2%20Var.pdf)
+
 ### Model Summary:
 
 The model summary indicates that the adjusted R-squared is 0.712, which means that approximately 71.2% of the variability in the Beef_Value_SlaughterMarket can be explained by the model with the given predictor variables (BeefConsumption_US, Beef_Production_BillionPounds, Barley, Maize, Sorghum, and SoyaBeans). The model's standard error of the estimate is 6.57258, which reflects the average distance that the observed values fall from the regression line.
@@ -146,6 +148,8 @@ The coefficients table provides information about the relationship between each 
 For further analysis, we will continue to remove the highest p-values (Barley, Maize, and Sorghum) and rerun the regression analysis until we achieve only the significant variables (BeefConsumption_US and SoyaBeans).
 
 ### Regression – No Precipitation, No Avg Temperature, No Beef Production
+
+[View 3 Var PDF](images/3%20Var.pdf)
 
 ### Model Summary: 
 The model summary indicates that the adjusted R-squared is 0.730, which means that approximately 73% of the variability in the Beef_Value_SlaughterMarket can be explained by the model with the given predictor variables (BeefConsumption_US, SoyaBeans, Sorghum, Barley, and Maize). The model's standard error of the estimate is 6.36361, which reflects the average distance that the observed values fall from the regression line.
@@ -207,9 +211,9 @@ dependent variable (Beef_Value_SlaughterMarket).
         relationship between SoyaBeans and Beef_Value_SlaughterMarket. As SoyaBeans increases by 1 unit,
         the Beef_Value_SlaughterMarket increases by 0.003 units, holding other variables constant. 
 
-#plots00000000000000000000
-
 ### Regression – No Precipitation, No Avg Temperature, No Beef Production, No Maize, No Sorghum
+
+[View 4 Var PDF](images/4%20Var.pdf)
 
 ## Model Summary:
 
@@ -241,9 +245,9 @@ dependent variable (Beef_Value_SlaughterMarket).
         SoyaBeans and Beef_Value_SlaughterMarket. As SoyaBeans increases by 1 unit, the Beef_Value_SlaughterMarket
         increases by 0.003 units, holding other variables constant.
 
-#plots
-
 ### Regression – No Precipitation, No Avg Temperature, No Beef Production, No Maize, No Sorghum, No Barley
+
+[View 5 Var PDF](images/5%20Var.pdf)
 
 ## Model Summary: 
 
@@ -275,12 +279,10 @@ dependent variable (Beef_Value_SlaughterMarket).
 This simplified model with only significant variables (BeefConsumption_US and SoyaBeans) explains about 70.9% of the
 variability in the Beef_Value_SlaughterMarket.
 
-#plots
-
 ___________________________________________
 
 # Section IV: SPSS Stepwise Variable Removal
-
+[View Stepwise Var PDF](images/Stepwise%20Var.pdf)
 In this stepwise regression model, SoyaBeans was entered in the first step, and BeefConsumption_US was entered in the
 second step, based on the specified criteria.
 
