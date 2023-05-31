@@ -1,6 +1,6 @@
 # From Soybean Fields to Slaughter Markets: Uncovering the Hidden Connections in Beef Production
 ------------------------------------------------------------------------------------------------------------------------------
-This regression project will focus on total value of beef at slaughter market (measured in billions of dollars, based on data
+This regression project will focus on total value of beef at slaughter market (measured in billions of dollars), based on data
 from the    and the impact the following variables could have on annual production:
 ------------------------------------------------------------------------------------------------------------------------------
 
@@ -80,8 +80,7 @@ dependent variable (Beef_Value_SlaughterMarket).
 BeefConsumption_US: The coefficient is -7.135, with a p-value of 0.008, indicating a significant negative relationship
 between BeefConsumption_US and Beef_Value_SlaughterMarket. As BeefConsumption_US increases by 1 unit, the
 Beef_Value_SlaughterMarket decreases by 7.135 units, holding other variables constant.
- Frank Quiroz
-11
+ 
 Beef_Production_BillionPounds: The coefficient is 0.637, with a p-value of 0.764, indicating no significant relationship
 between Beef_Production_BillionPounds and Beef_Value_SlaughterMarket.
 Barley: The coefficient is -0.001, with a p-value of 0.206, indicating no significant relationship between Barley and
