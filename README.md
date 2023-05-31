@@ -67,94 +67,119 @@ indicates that these results should be interpreted with caution. To address this
 
 ___________________________________________
 # Section III: Manual Removal of Variables
-Model Summary: The model summary indicates that the adjusted R-squared is 0.689, which means that approximately
-68.9% of the variability in the Beef_Value_SlaughterMarket can be explained by the model with the given predictor
-variables (AvgTemp, BeefConsumption_US, Sorghum, Beef_Production_BillionPounds, Barley, Maize, and SoyaBeans).
-The model's standard error of the estimate is 6.83518, which reflects the average distance that the observed values fall
-from the regression line.
-ANOVA: The ANOVA table shows that the model is statistically significant at a 0.002 level. This means that there is a
-significant relationship between the dependent variable (Beef_Value_SlaughterMarket) and the predictor variables. The
-F-value of 7.013 indicates that the model is a good fit to the data, as it is significantly different from a model with no
-predictors.
-Coefficients: The coefficients table provides information about the relationship between each predictor variable and the
-dependent variable (Beef_Value_SlaughterMarket).
-BeefConsumption_US: The coefficient is -7.135, with a p-value of 0.008, indicating a significant negative relationship
-between BeefConsumption_US and Beef_Value_SlaughterMarket. As BeefConsumption_US increases by 1 unit, the
-Beef_Value_SlaughterMarket decreases by 7.135 units, holding other variables constant.
- 
-Beef_Production_BillionPounds: The coefficient is 0.637, with a p-value of 0.764, indicating no significant relationship
-between Beef_Production_BillionPounds and Beef_Value_SlaughterMarket.
-Barley: The coefficient is -0.001, with a p-value of 0.206, indicating no significant relationship between Barley and
-Beef_Value_SlaughterMarket.
-Maize: The coefficient is 0.000, with a p-value of 0.705, indicating no significant relationship between Maize and
-Beef_Value_SlaughterMarket.
-Sorghum: The coefficient is 0.000, with a p-value of 0.698, indicating no significant relationship between Sorghum and
-Beef_Value_SlaughterMarket.
-SoyaBeans: The coefficient is 0.004, with a p-value of 0.023, indicating a significant positive relationship between
-SoyaBeans and Beef_Value_SlaughterMarket. As SoyaBeans increase by 1 unit, the Beef_Value_SlaughterMarket
-increases by 0.004 units, holding other variables constant.
-AvgTemp: The coefficient is -0.326, with a p-value of 0.889, indicating no significant relationship between AvgTemp and
-Beef_Value_SlaughterMarket.
-From here we will continue to remove those variables with the highest P-values. 
 
-### Regression – No precipitation, No Avg Temperature
-Model Summary: The model summary indicates that the adjusted R-squared is 0.712, which means that approximately
-71.2% of the variability in the Beef_Value_SlaughterMarket can be explained by the model with the given predictor
-variables (BeefConsumption_US, Beef_Production_BillionPounds, Barley, Maize, Sorghum, and SoyaBeans). The
-model's standard error of the estimate is 6.57258, which reflects the average distance that the observed values fall from
-the regression line.
-ANOVA: The ANOVA table shows that the model is statistically significant at a <0.001 level. This means that there is a
-significant relationship between the dependent variable (Beef_Value_SlaughterMarket) and the predictor variables. The
-F-value of 8.846 indicates that the model is a good fit for the data, as it is significantly different from a model with no
-predictors.
-Coefficients: The coefficients table provides information about the relationship between each predictor variable and the
-dependent variable (Beef_Value_SlaughterMarket).
-BeefConsumption_US: The coefficient is -7.154, with a p-value of 0.006, indicating a significant negative relationship
-between BeefConsumption_US and Beef_Value_SlaughterMarket. As BeefConsumption_US increases by 1 unit, the
-Beef_Value_SlaughterMarket decreases by 7.154 units, holding other variables constant.
-Beef_Production_BillionPounds: The coefficient is 0.691, with a p-value of 0.730, indicating no significant relationship
-between Beef_Production_BillionPounds and Beef_Value_SlaughterMarket.
-Barley: The coefficient is -0.001, with a p-value of 0.182, indicating no significant relationship between Barley and
-Beef_Value_SlaughterMarket.
-Maize: The coefficient is 0.000, with a p-value of 0.713, indicating no significant relationship between Maize and
-Beef_Value_SlaughterMarket.
-Sorghum: The coefficient is 0.000, with a p-value of 0.694, indicating no significant relationship between Sorghum and
-Beef_Value_SlaughterMarket.
-SoyaBeans: The coefficient is 0.003, with a p-value of 0.005, indicating a significant positive relationship between
-SoyaBeans and Beef_Value_SlaughterMarket. As SoyaBeans increases by 1 unit, the Beef_Value_SlaughterMarket
-increases by 0.003 units, holding other variables constant. 
+## Model Summary:
 
-#plots
+The model summary indicates that the adjusted R-squared is 0.689, which means that approximately 68.9% of the variability in the Beef_Value_SlaughterMarket can be explained by the model with the given predictor variables (AvgTemp, BeefConsumption_US, Sorghum, Beef_Production_BillionPounds, Barley, Maize, and SoyaBeans). The model's standard error of the estimate is 6.83518, which reflects the average distance that the observed values fall from the regression line.
+
+## ANOVA:
+
+The ANOVA table shows that the model is statistically significant at a 0.002 level. This means that there is a significant relationship between the dependent variable (Beef_Value_SlaughterMarket) and the predictor variables. The F-value of 7.013 indicates that the model is a good fit to the data, as it is significantly different from a model with no predictors.
+
+## Coefficients:
+
+The coefficients table provides information about the relationship between each predictor variable and the dependent variable (Beef_Value_SlaughterMarket).
+
+    - BeefConsumption_US: The coefficient is -7.135, with a p-value of 0.008, indicating a 
+      significant negative relationship between BeefConsumption_US and  Beef_Value_SlaughterMarket.
+      As BeefConsumption_US increases by 1 unit, the Beef_Value_SlaughterMarket decreases by 7.135 units, 
+      holding other variables constant.
+
+    - Beef_Production_BillionPounds: The coefficient is 0.637, with a p-value of 0.764, indicating no
+      significant relationship between Beef_Production_BillionPounds and Beef_Value_SlaughterMarket.
+
+    - Barley: The coefficient is -0.001, with a p-value of 0.206, indicating no significant relationship
+      between Barley and Beef_Value_SlaughterMarket.
+
+    - Maize: The coefficient is 0.000, with a p-value of 0.705, indicating no significant relationship 
+      between Maize and Beef_Value_SlaughterMarket.
+
+    - Sorghum: The coefficient is 0.000, with a p-value of 0.698, indicating no significant relationship
+      between Sorghum and Beef_Value_SlaughterMarket.
+
+    - SoyaBeans: The coefficient is 0.004, with a p-value of 0.023, indicating a significant positive 
+      relationship between SoyaBeans and Beef_Value_SlaughterMarket. As SoyaBeans increase by 1 unit, 
+      the Beef_Value_SlaughterMarket increases by 0.004 units, holding other variables constant.
+
+    - AvgTemp: The coefficient is -0.326, with a p-value of 0.889, indicating no significant 
+      relationship between AvgTemp and Beef_Value_SlaughterMarket.
+
+From here, we will continue to remove those variables with the highest p-values.
+
+---
+
+## Regression – No Precipitation, No Avg Temperature
+
+### Model Summary:
+
+The model summary indicates that the adjusted R-squared is 0.712, which means that approximately 71.2% of the variability in the Beef_Value_SlaughterMarket can be explained by the model with the given predictor variables (BeefConsumption_US, Beef_Production_BillionPounds, Barley, Maize, Sorghum, and SoyaBeans). The model's standard error of the estimate is 6.57258, which reflects the average distance that the observed values fall from the regression line.
+
+### ANOVA:
+
+The ANOVA table shows that the model is statistically significant at a <0.001 level. This means that there is a significant relationship between the dependent variable (Beef_Value_SlaughterMarket) and the predictor variables. The F-value of 8.846 indicates that the model is a good fit for the data, as it is significantly different from a model with no predictors.
+
+### Coefficients:
+
+The coefficients table provides information about the relationship between each predictor variable and the dependent variable (Beef_Value_SlaughterMarket).
+
+    - BeefConsumption_US: The coefficient is -7.154, with a p-value of 0.006, indicating a 
+      significant negative relationship between BeefConsumption_US and Beef_Value_SlaughterMarket.
+      As BeefConsumption_US increases by 1 unit, the Beef_Value_SlaughterMarket decreases by 7.154 units, 
+      holding other variables constant.
+
+    - Beef_Production_BillionPounds: The coefficient is 0.691, with a p-value of 0.730, indicating 
+      no significant relationship between  Beef_Production_BillionPounds and Beef_Value_SlaughterMarket.
+
+    - Barley: The coefficient is -0.001, with a p-value of 0.182, indicating no significant relationship
+      between Barley and Beef_Value_SlaughterMarket.
+
+    - Maize: The coefficient is 0.000, with a p-value of 0.713, indicating no significant relationship 
+      between Maize and Beef_Value_SlaughterMarket.
+
+    - Sorghum: The coefficient is 0.000, with a p-value of 0.694, indicating no significant relationship 
+      between Sorghum and Beef_Value_SlaughterMarket.
+
+    - SoyaBeans: The coefficient is 0.003, with a p-value of 0.005, indicating a significant positive 
+      relationship between SoyaBeans and Beef_Value_SlaughterMarket. As SoyaBeans increases by 1 unit, 
+      the Beef_Value_SlaughterMarket increases by 0.003 units, holding other variables constant.
+
+For further analysis, we will continue to remove the highest p-values (Barley, Maize, and Sorghum) and rerun the regression analysis until we achieve only the significant variables (BeefConsumption_US and SoyaBeans).
 
 ### Regression – No Precipitation, No Avg Temperature, No Beef Production
-Model Summary: The model summary indicates that the adjusted R-squared is 0.730, which means that approximately
-73% of the variability in the Beef_Value_SlaughterMarket can be explained by the model with the given predictor
-variables (BeefConsumption_US, SoyaBeans, Sorghum, Barley, and Maize). The model's standard error of the estimate is
-6.36361, which reflects the average distance that the observed values fall from the regression line.
-ANOVA: The ANOVA table shows that the model is statistically significant at a <0.001 level. This means that there is a
-significant relationship between the dependent variable (Beef_Value_SlaughterMarket) and the predictor variables. The
-F-value of 11.297 indicates that the model is a good fit to the data, as it is significantly different from a model with no
-predictors.
-Coefficients: The coefficients table provides information about the relationship between each predictor variable and the
-dependent variable (Beef_Value_SlaughterMarket).
-BeefConsumption_US: The coefficient is -6.650, with a p-value of <0.001, indicating a significant negative relationship
-between BeefConsumption_US and Beef_Value_SlaughterMarket. As BeefConsumption_US increases by 1 unit, the
-Beef_Value_SlaughterMarket decreases by 6.650 units, holding other variables constant.
-Barley: The coefficient is -0.001, with a p-value of 0.180, indicating no significant relationship between Barley and
-Beef_Value_SlaughterMarket.
-Maize: The coefficient is 0.000, with a p-value of 0.719, indicating no significant relationship between Maize and
-Beef_Value_SlaughterMarket.
-Sorghum: The coefficient is 0.000, with a p-value of 0.522, indicating no significant relationship between Sorghum and
-Beef_Value_SlaughterMarket.
-SoyaBeans: The coefficient is 0.004, with a p-value of 0.002, indicating a significant positive relationship between
-SoyaBeans and Beef_Value_SlaughterMarket. As SoyaBeans increases by 1 unit, the Beef_Value_SlaughterMarket
-increases by 0.004 units, holding other variables constant.
-For further analysis, we will continue to remove the highest p-values (Barley, Maize, and Sorghum) and rerunning the
-regression analysis until we achieve only the significant variables (BeefConsumption_US and SoyaBeans) 
 
-#plots
+### Model Summary: 
+The model summary indicates that the adjusted R-squared is 0.730, which means that approximately 73% of the variability in the Beef_Value_SlaughterMarket can be explained by the model with the given predictor variables (BeefConsumption_US, SoyaBeans, Sorghum, Barley, and Maize). The model's standard error of the estimate is 6.36361, which reflects the average distance that the observed values fall from the regression line.
+
+### ANOVA:
+The ANOVA table shows that the model is statistically significant at a <0.001 level. This means that there is a significant relationship between the dependent variable (Beef_Value_SlaughterMarket) and the predictor variables. The F-value of 11.297 indicates that the model is a good fit to the data, as it is significantly different from a model with no predictors.
+
+### Coefficients:
+
+The coefficients table provides information about the relationship between each predictor variable and the dependent variable (Beef_Value_SlaughterMarket).
+
+    -   BeefConsumption_US: The coefficient is -6.650, with a p-value of <0.001, indicating a significant
+        negative relationship between BeefConsumption_US and Beef_Value_SlaughterMarket.
+        As BeefConsumption_US increases by 1 unit, the Beef_Value_SlaughterMarket decreases by 6.650 units, 
+        holding other variables constant.
+    
+    -   Barley: The coefficient is -0.001, with a p-value of 0.180, indicating no significant relationship
+        between Barley and Beef_Value_SlaughterMarket.
+    
+    -   Maize: The coefficient is 0.000, with a p-value of 0.719, indicating no significant relationship  
+        between Maize and Beef_Value_SlaughterMarket.
+     
+    -   Sorghum: The coefficient is 0.000, with a p-value of 0.522, indicating no significant relationship 
+        between Sorghum and Beef_Value_SlaughterMarket.
+        
+    -   SoyaBeans: The coefficient is 0.004, with a p-value of 0.002, indicating a significant positive 
+        relationship between SoyaBeans and  Beef_Value_SlaughterMarket. As SoyaBeans increases by 1 unit,
+        the Beef_Value_SlaughterMarket increases by 0.004 units, holding other variables constant.
+
 ### Regression – No Precipitation, No Avg Temperature, No Beef Production, No Maize
-Model Summary: The model summary indicates that the adjusted R-squared is 0.730, which means that approximately
+
+## Model Summary: 
+
+The model summary indicates that the adjusted R-squared is 0.730, which means that approximately
 73% of the variability in the Beef_Value_SlaughterMarket can be explained by the model with the given predictor
 variables (BeefConsumption_US, Barley, Sorghum, and SoyaBeans). The model's standard error of the estimate is
 6.36361, which reflects the average distance that the observed values fall from the regression line.
@@ -162,64 +187,91 @@ ANOVA: The ANOVA table shows that the model is statistically significant at a <0
 significant relationship between the dependent variable (Beef_Value_SlaughterMarket) and the predictor variables. The
 F-value of 11.297 indicates that the model is a good fit to the data, as it is significantly different from a model with no
 predictors.
-Coefficients: The coefficients table provides information about the relationship between each predictor variable and the
-dependent variable (Beef_Value_SlaughterMarket).
-BeefConsumption_US: The coefficient is -6.592, with a p-value of <0.001, indicating a significant negative relationship
-between BeefConsumption_US and Beef_Value_SlaughterMarket. As BeefConsumption_US increases by 1 unit, the
-Beef_Value_SlaughterMarket decreases by 6.592 units, holding other variables constant.
-Barley: The coefficient is -0.001, with a p-value of 0.165, indicating no significant relationship between Barley and
-Beef_Value_SlaughterMarket.
-Sorghum: The coefficient is 0.000, with a p-value of 0.325, indicating no significant relationship between Sorghum and
-Beef_Value_SlaughterMarket.
-SoyaBeans: The coefficient is 0.003, with a p-value of <0.001, indicating a significant positive relationship between
-SoyaBeans and Beef_Value_SlaughterMarket. As SoyaBeans increases by 1 unit, the Beef_Value_SlaughterMarket
-increases by 0.003 units, holding other variables constant. 
 
-#plots
+## Coefficients: 
+
+The coefficients table provides information about the relationship between each predictor variable and the
+dependent variable (Beef_Value_SlaughterMarket).
+
+    -   BeefConsumption_US: The coefficient is -6.592, with a p-value of <0.001, indicating a significant negative 
+        relationship between BeefConsumption_US and Beef_Value_SlaughterMarket. As BeefConsumption_US increases 
+        by 1 unit, the Beef_Value_SlaughterMarket decreases by 6.592 units, holding other variables constant.
+    
+    -   Barley: The coefficient is -0.001, with a p-value of 0.165, indicating no significant relationship
+        between Barley and Beef_Value_SlaughterMarket.
+    
+    -   Sorghum: The coefficient is 0.000, with a p-value of 0.325, indicating no significant relationship
+        between Sorghum and Beef_Value_SlaughterMarket.
+    
+    -   SoyaBeans: The coefficient is 0.003, with a p-value of <0.001, indicating a significant positive
+        relationship between SoyaBeans and Beef_Value_SlaughterMarket. As SoyaBeans increases by 1 unit,
+        the Beef_Value_SlaughterMarket increases by 0.003 units, holding other variables constant. 
+
+#plots00000000000000000000
 
 ### Regression – No Precipitation, No Avg Temperature, No Beef Production, No Maize, No Sorghum
-Model Summary: The model summary indicates that the adjusted R-squared is 0.745, which means that approximately
+
+## Model Summary:
+
+The model summary indicates that the adjusted R-squared is 0.745, which means that approximately
 74.5% of the variability in the Beef_Value_SlaughterMarket can be explained by the model with the given predictor
 variables (BeefConsumption_US, Barley, and SoyaBeans). The model's standard error of the estimate is 6.18394, which
 reflects the average distance that the observed values fall from the regression line.
-ANOVA: The ANOVA table shows that the model is statistically significant at a <0.001 level. This means that there is a
+
+## ANOVA: 
+
+The ANOVA table shows that the model is statistically significant at a <0.001 level. This means that there is a
 significant relationship between the dependent variable (Beef_Value_SlaughterMarket) and the predictor variables. The
 F-value of 19.547 indicates that the model is a good fit to the data, as it is significantly different from a model with no
 predictors.
-Coefficients: The coefficients table provides information about the relationship between each predictor variable and the
-dependent variable (Beef_Value_SlaughterMarket).
-BeefConsumption_US: The coefficient is -7.055, with a p-value of <0.001, indicating a significant negative relationship
-between BeefConsumption_US and Beef_Value_SlaughterMarket. As BeefConsumption_US increases by 1 unit, the
-Beef_Value_SlaughterMarket decreases by 7.055 units, holding other variables constant.
-Barley: The coefficient is -0.001, with a p-value of 0.082, indicating no significant relationship between Barley and
-Beef_Value_SlaughterMarket.
- 24
 
-24
-SoyaBeans: The coefficient is 0.003, with a p-value of <0.001, indicating a significant positive relationship between
-SoyaBeans and Beef_Value_SlaughterMarket. As SoyaBeans increases by 1 unit, the Beef_Value_SlaughterMarket
-increases by 0.003 units, holding other variables constant.
+## Coefficients:
+
+The coefficients table provides information about the relationship between each predictor variable and the
+dependent variable (Beef_Value_SlaughterMarket).
+
+    -   BeefConsumption_US: The coefficient is -7.055, with a p-value of <0.001, indicating a significant negative relationship
+        between BeefConsumption_US and Beef_Value_SlaughterMarket. As BeefConsumption_US increases by 1 unit, the
+        Beef_Value_SlaughterMarket decreases by 7.055 units, holding other variables constant.
+
+    -   Barley: The coefficient is -0.001, with a p-value of 0.082, indicating no significant relationship between Barley and
+        Beef_Value_SlaughterMarket.
+
+    -   SoyaBeans: The coefficient is 0.003, with a p-value of <0.001, indicating a significant positive relationship between
+        SoyaBeans and Beef_Value_SlaughterMarket. As SoyaBeans increases by 1 unit, the Beef_Value_SlaughterMarket
+        increases by 0.003 units, holding other variables constant.
 
 #plots
 
-### Regression – No Precipitation, No Avg Temperature, No Beef Production, No Maize, No
-Sorghum, No Barley
-Model Summary: The model summary indicates that the adjusted R-squared is 0.709, which means that approximately
+### Regression – No Precipitation, No Avg Temperature, No Beef Production, No Maize, No Sorghum, No Barley
+
+## Model Summary: 
+
+The model summary indicates that the adjusted R-squared is 0.709, which means that approximately
 70.9% of the variability in the Beef_Value_SlaughterMarket can be explained by the model with the given predictor
 variables (BeefConsumption_US and SoyaBeans). The model's standard error of the estimate is 6.61327, which reflects
 the average distance that the observed values fall from the regression line.
-ANOVA: The ANOVA table shows that the model is statistically significant at a <0.001 level. This means that there is a
+
+## ANOVA: 
+
+The ANOVA table shows that the model is statistically significant at a <0.001 level. This means that there is a
 significant relationship between the dependent variable (Beef_Value_SlaughterMarket) and the predictor variables. The
 F-value of 24.132 indicates that the model is a good fit to the data, as it is significantly different from a model with no
 predictors.
-Coefficients: The coefficients table provides information about the relationship between each predictor variable and the
+
+## Coefficients: 
+
+The coefficients table provides information about the relationship between each predictor variable and the
 dependent variable (Beef_Value_SlaughterMarket).
-BeefConsumption_US: The coefficient is -5.840, with a p-value of <0.001, indicating a significant negative relationship
-between BeefConsumption_US and Beef_Value_SlaughterMarket. As BeefConsumption_US increases by 1 unit, the
-Beef_Value_SlaughterMarket decreases by 5.840 units, holding other variables constant.
-SoyaBeans: The coefficient is 0.002, with a p-value of <0.001, indicating a significant positive relationship between
-SoyaBeans and Beef_Value_SlaughterMarket. As SoyaBeans increases by 1 unit, the Beef_Value_SlaughterMarket
-increases by 0.002 units, holding other variables constant.
+
+    -   BeefConsumption_US: The coefficient is -5.840, with a p-value of <0.001, indicating a significant negative relationship
+        between BeefConsumption_US and Beef_Value_SlaughterMarket. As BeefConsumption_US increases by 1 unit, the
+        Beef_Value_SlaughterMarket decreases by 5.840 units, holding other variables constant.
+
+    -   SoyaBeans: The coefficient is 0.002, with a p-value of <0.001, indicating a significant positive relationship between
+        SoyaBeans and Beef_Value_SlaughterMarket. As SoyaBeans increases by 1 unit, the Beef_Value_SlaughterMarket 
+        increases by 0.002 units, holding other variables constant.
+        
 This simplified model with only significant variables (BeefConsumption_US and SoyaBeans) explains about 70.9% of the
 variability in the Beef_Value_SlaughterMarket.
 
@@ -231,31 +283,46 @@ ___________________________________________
 
 In this stepwise regression model, SoyaBeans was entered in the first step, and BeefConsumption_US was entered in the
 second step, based on the specified criteria.
-Correlations: The Pearson Correlation table displays the correlations between the dependent variable
-(Beef_Value_SlaughterMarket) and each of the predictor variables. The significant correlations are with
-BeefConsumption_US (-0.637, p<0.001) and SoyaBeans (0.686, p<0.001).
-Model Summary:
- Step 1: In the first step, only SoyaBeans is included as a predictor. The adjusted R-squared is 0.441, which means that
-44.1% of the variability in the Beef_Value_SlaughterMarket can be explained by SoyaBeans alone.
-Step 2: In the second step, BeefConsumption_US is added as a predictor. The adjusted R-squared increases to 0.709,
-indicating that 70.9% of the variability in the Beef_Value_SlaughterMarket can be explained by both SoyaBeans and
-BeefConsumption_US.
-ANOVA: The ANOVA table shows that both models are statistically significant at a <0.001 level. This indicates that
+
+## Correlations: 
+
+The Pearson Correlation table displays the correlations between the dependent variable (Beef_Value_SlaughterMarket) 
+and each of the predictor variables. The significant correlations are with BeefConsumption_US (-0.637, p<0.001) and SoyaBeans (0.686, p<0.001).
+
+## Model Summary:
+
+    -   Step 1: In the first step, only SoyaBeans is included as a predictor. The adjusted R-squared is 0.441, which means that
+                44.1% of the variability in the Beef_Value_SlaughterMarket can be explained by SoyaBeans alone.
+
+    -   Step 2: In the second step, BeefConsumption_US is added as a predictor. The adjusted R-squared increases to 0.709,
+                indicating that 70.9% of the variability in the Beef_Value_SlaughterMarket can be explained by both SoyaBeans and
+                BeefConsumption_US.
+
+## ANOVA:
+
+The ANOVA table shows that both models are statistically significant at a <0.001 level. This indicates that
 there is a significant relationship between the dependent variable (Beef_Value_SlaughterMarket) and the predictor
 variables in both models.
- 28
+ 
+## Coefficients:
 
-28
-Coefficients:
-Step 1: The coefficient for SoyaBeans is 0.003 (p<0.001), indicating a significant positive relationship with
-Beef_Value_SlaughterMarket.
-Step 2: The coefficients for SoyaBeans and BeefConsumption_US are 0.002 (p<0.001) and -5.840 (p<0.001),
-respectively, indicating significant positive and negative relationships with Beef_Value_SlaughterMarket.
-Excluded Variables: This table shows the variables that were not included in the model, along with their p-values and
+    -   Step 1: The coefficient for SoyaBeans is 0.003 (p<0.001), indicating a significant positive relationship with
+                Beef_Value_SlaughterMarket.
+
+    -   Step 2: The coefficients for SoyaBeans and BeefConsumption_US are 0.002 (p<0.001) and -5.840 (p<0.001),
+                respectively, indicating significant positive and negative relationships with Beef_Value_SlaughterMarket.
+
+## Excluded Variables: 
+
+This table shows the variables that were not included in the model, along with their p-values and
 collinearity statistics. None of the excluded variables met the criteria for inclusion in the model.
-Collinearity Diagnostics: The collinearity diagnostics table indicates that multicollinearity is not a major concern in this
+
+## Collinearity Diagnostics: 
+
+The collinearity diagnostics table indicates that multicollinearity is not a major concern in this
 model. The variance inflation factors (VIF) for both predictor variables (SoyaBeans and BeefConsumption_US) are close
 to 1, which is an acceptable level.
+
 In conclusion, the stepwise regression analysis resulted in a model with two significant predictor variables, SoyaBeans
 and BeefConsumption_US, which together explain about 70.9% of the variability in the Beef_Value_SlaughterMarket. 
 
@@ -270,10 +337,13 @@ negative relationship. Overall, the two models have the same predictor variables
 adjusted R-squared values and the relationships between the dependent variable and predictors. The stepwise regression
 model automated the process of selecting significant predictors, while the manual removal of variables allowed for a more
 controlled approach. In this case, both methods led to the same conclusion.
-1. An increase in the production of primary feed crops, such as maize and soya beans, leads to an increase in beef
-production.
-2. Climatic factors, such as temperature and precipitation, have a direct impact on beef production.
-3. Changes in consumer preferences and dietary habits can impact beef production.
+
+## 1. An increase in the production of primary feed crops, such as maize and soya beans, leads to an increase in beef production.
+
+## 2. Climatic factors, such as temperature and precipitation, have a direct impact on beef production.
+
+## 3. Changes in consumer preferences and dietary habits can impact beef production.
+
 Our analysis of the factors influencing the total value of beef at slaughter markets has revealed the complex interplay of
 various variables, including crop production, climatic factors, cattle population, and meat consumption. By using a
 stepwise regression model, we have identified the most significant factors and provided insights into their impact on beef
@@ -285,7 +355,7 @@ crop growth, these variables were not found to be significant predictors of the 
 model. Given the knowledge that climatic factors play a role in crop production we should explore these interactions
 further and compare models.
 ___________________________________________
-### References
+##### References
 ___________________________________________
 - United States Department of Agriculture 
 - Food and Agriculture Organization of Nations (FAO)
